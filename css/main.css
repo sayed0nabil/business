@@ -463,12 +463,11 @@ header .public .circle1 .circle2{
     margin:20px 0;
 }
 .content .happy .sayed .conpic{
-    width:70px;
-    height:70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border:2px solid #ff6227;
-    margin:0 auto;
-    padding:3px;
+    border: 7px double #ff6227;
+    margin: 0 auto
 }
 .content .happy .sayed .conpic div{
     height:93%;
