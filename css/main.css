@@ -3,10 +3,12 @@
     font-family:arial;
 }
 .container{
-    width:1150px;
     margin:0 auto;
     height:100%;
     overflow: hidden;
+}
+.main-color{
+    color: #ff6227;
 }
 ul{
     padding:0;
@@ -164,8 +166,8 @@ header .public .circle1 .circle2{
     right:20px;
 }
 .circleicons{
-    width:17px;
-    height:15px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border:1px solid #97979e;
     color:#97979e;
@@ -187,7 +189,7 @@ header .public .circle1 .circle2{
     
 }
  /*Start Goal */
-.content  .goal :first-of-type article:first-of-type{
+/* .content  .goal :first-of-type article:first-of-type{
     width:50%;
     float:left;
 }
@@ -195,7 +197,7 @@ header .public .circle1 .circle2{
     width:45%;
     float:right;
     
-}
+} */
 .content .goal{
     overflow:hidden;
 }
@@ -234,7 +236,7 @@ header .public .circle1 .circle2{
     transition:all ease-in-out .1s;
 }
 .content .goal article:nth-of-type(2) p:first-of-type{
-    margin-left:36%;
+    /* margin-left:36%; */
     background:#ff6227;
 }
 .content .goal article:nth-of-type(2) p:hover{
@@ -247,17 +249,11 @@ header .public .circle1 .circle2{
     overflow:hidden;
 }
 .content .learnmore article{
-    float:left;
-    width:30%;
     border:1px solid silver;
-
-    padding:.33333%;
-    margin-left:2%;
-    
+    padding:3px; 
 }
 .content .learnmore article section{
     border:1px solid silver;
-    width:100%;
     height:100%;
     box-sizing: border-box;
 }
@@ -284,35 +280,18 @@ header .public .circle1 .circle2{
     margin-bottom: 4px;
 }
 /*End Learnmore */
-/*Start Good */
-.content .good p:first-of-type{
-    text-align:center;
-    letter-spacing: 5px;
+/* Start Good */
+.good{
+    background: rgb(30, 29, 29);
 }
-.content .good p:nth-of-type(2){
-    text-align:center;
+.good h2{
+    font-size: 30px;
+    font-weight: bold;
 }
-.content .good p:nth-of-type(2) span:first-of-type{
-    font-size:25px;
-    font-weight:600;
-    color:#ff6227;
+.good p{
+    color: silver;
 }
-.content .good p:nth-of-type(2) span:nth-of-type(2){
-    color:white;
-    font-size:25px;
-    font-weight:600;
-    background:#242634;
-}
-.content .good p:nth-of-type(3),.good p:nth-of-type(4){
-    width:40%;
-    font-size:15px;
-    font-weight:500;
-    margin-left:33%;
-    color:rgba(0,0,0,.6);
-}
-.content .good p:nth-of-type(4){
-    margin-left:38%;
-}
+/* End God */
 /*End Good */
 /*Start taxes */
 .content .taxes{
@@ -320,10 +299,6 @@ header .public .circle1 .circle2{
     overflow:hidden;
 }
 .content .taxes article{
-    float:left;
-    width:48%;
-    margin-right:2%;
-    margin-bottom:2%;
     transition:all ease-in-out .2s;
     cursor:pointer;
 }
@@ -366,17 +341,20 @@ header .public .circle1 .circle2{
     background:#30313c;
     border-color:#30313c;
 }
-.content .good button{
-    color:white;
+.btns button{
+    color:black;
+    background: transparent;
     margin-right:20px;
     border-radius: 3px;
     font-size:15px;
 }
-.content .projects .good button:first-of-type:hover{
+.btns button:first-of-type{
+    color: white;
     background:#ff6227;
     border-color:#ff6227;
 }
-.content .projects .good button:hover{
+.btns button:hover{
+    color: white;
     background:#30313c;
     border-color:#30313c;
 }
@@ -388,12 +366,10 @@ header .public .circle1 .circle2{
     margin-top:50px;
 }
 .content .pictures article{
-    width:31%;
     height:300px;
     background:url("../images/picture.jpg");
     background-size:cover;
     float:left;
-    margin:1%;
     cursor:pointer;
    transition: all ease-in-out .5s;
    padding:20px;
@@ -454,7 +430,6 @@ header .public .circle1 .circle2{
 /* Start Happy */
 .content .happy{
       padding:10px 0;
-      background:silver;
 }
 .content .happy .good{
     margin:20px;
@@ -494,14 +469,8 @@ header .public .circle1 .circle2{
     background-color:rgba(31,33,48,.8);
     padding-bottom:60px;
 }
-.content .meet .color .good p{
-    color:white;
-}
 .content .meet .color article{
-    width:20%;
     height:300px;
-    margin-left:4%;
-    float:left;
     text-align:center;
     position: relative;
     cursor:pointer;
@@ -525,7 +494,7 @@ header .public .circle1 .circle2{
 }
 .content .meet .color article .bottom{
     width:100%;
-    height:35%;
+    height:45%;
     position: absolute;
     bottom:-35px;
     left:0;
@@ -534,7 +503,7 @@ header .public .circle1 .circle2{
     padding-bottom:10px;
 }
 .content .meet .color article:hover .bottom{
-    bottom:0;
+    bottom:0px;
 }
 .content .meet article div div:first-of-type{
     text-transform:uppercase;
@@ -554,11 +523,9 @@ header .public .circle1 .circle2{
 /* End Meet */
 /* Start pro */
 .content .pro article{
-    float:left;
-    width:21%;
-    margin-left:3%;
     box-sizing: border-box;
     height:450px;
+    padding: 10px;
     transform: translate(0,30px);
     transition: all ease-in-out .3s;
     cursor:pointer;
@@ -572,34 +539,32 @@ header .public .circle1 .circle2{
     border:2px solid silver;
 }
 .content .pro article:nth-of-type(3){
-    width:25%;
     height:450px;
     padding-top:30px;
     transform:translate(0,0);
 }
 .content .pro article h2{
-    font-weight:100;
+    font-weight: bold;
     margin-bottom:20px;
-    font-size:30px;
+    font-size:25px;
 }
 .content .pro article div:first-of-type{
     font-weight:600;
-    text-align:center;
     font-size:40px;
     color:rgba(0,0,0,.8);
     margin-bottom:20px;
 }
 .content .pro article p{
-    text-align:center;
     color:rgba(0,0,0,.7);
     margin-bottom:20px;
 }
 .content .pro article div:nth-of-type(2){
-    margin:5px 30px;
+    margin:5px 13px;
 }
 .content .pro article div button{
     color:white;
     font-size:15px;
+    padding: 0;
 }
 .content .pro article div:nth-of-type(2):hover button{
     color:#ff6227;
